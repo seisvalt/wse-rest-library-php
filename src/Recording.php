@@ -9,7 +9,7 @@ use Com\Wowza\Entities\Application\Helpers\Settings;
 
 class Recording extends Wowza
 {
-    protected $recordName = "myStream";
+    protected $recorderName = "myStream";
     protected $instanceName = "_definst_";
     protected $recorderState = "Waiting for stream";
     protected $defaultRecorder = "true";
@@ -61,11 +61,11 @@ class Recording extends Wowza
         $recordingStartTime
     ) {
 
-        $this->recordName = $recordName;
+        $this->recorderName = $recordName;
         $this->instanceName = $instanceName;
-        $this->recordName = $recorderState;
-        $this->recordName = $defaultRecorder;
-        $this->recordName = $segmentationType;
+        $this->recorderState = $recorderState;
+        $this->defaultRecorder = $defaultRecorder;
+        $this->segmentationType = $segmentationType;
         $this->outputPath = $outputPath;
         $this->baseFile = $baseFile;
         $this->fileFormat = $fileFormat;
